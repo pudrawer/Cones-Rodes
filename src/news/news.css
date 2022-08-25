@@ -1,0 +1,31 @@
+.news-block {
+    display: flex;
+    align-items: center;
+
+    margin-top: 12.7rem;
+}
+
+@media (max-width: 767px) {
+    .news-block {
+        margin-top: 3rem;
+    }
+}
+
+.news-block__title {
+    font-weight: 400;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+.news-block__link {
+    margin-top: 2.4rem;
+
+    color: black;
+    font-size: 2rem;
+}
+
+@media (max-width: 767px) {
+    .news-block__link {
+        font-size: 1.6rem;
+    }
+}
