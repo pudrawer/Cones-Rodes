@@ -1,7 +1,7 @@
 .welcome-block {
     height: 65rem;
 
-    background: url("/src/img/image 1.jpg");
+    background: url("/src/img/image%201.jpg");
     background-size: cover;
 }
 
