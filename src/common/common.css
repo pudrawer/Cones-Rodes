@@ -76,14 +76,10 @@ body {
 }
 
 .welcome-block__link_heeded {
-    display: none;
+    display: inherit;
 }
 
 @media (max-width: 1024px) {
-    .welcome-block__link_heeded {
-        display: inherit;
-    }
-
     .welcome-block__link_heeded {
         display: none;
     }
