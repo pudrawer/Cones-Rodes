@@ -56,3 +56,11 @@ body {
 a {
     text-decoration: none;
 }
+
+input {
+    outline: none;
+}
+
+input[placeholder] {
+    color: #CECFCF;
+}
