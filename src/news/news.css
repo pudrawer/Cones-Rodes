@@ -1,4 +1,4 @@
-.news-block {
+.news {
     display: flex;
     align-items: center;
 
@@ -6,18 +6,18 @@
 }
 
 @media (max-width: 767px) {
-    .news-block {
+    .news {
         margin-top: 3rem;
     }
 }
 
-.news-block__title {
+.news__title {
     font-weight: 400;
     font-size: 2.4rem;
     text-transform: uppercase;
 }
 
-.news-block__link {
+.news__link {
     margin-top: 2.4rem;
 
     color: black;
@@ -25,7 +25,7 @@
 }
 
 @media (max-width: 767px) {
-    .news-block__link {
+    .news__link {
         font-size: 1.6rem;
     }
 }

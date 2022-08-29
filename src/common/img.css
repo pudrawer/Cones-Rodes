@@ -20,19 +20,11 @@
     }
 }
 
-.block-img {
+img {
     width: 100%;
     height: fit-content;
 }
 
-@media (max-width: 1024px) {
-    .block-img {
-        width: 90%;
-    }
-}
-
-@media (max-width: 767px) {
-    .block-img {
-        width: 100%;
-    }
+img[class='values__img'] {
+    width: revert;
 }

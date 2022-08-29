@@ -1,0 +1,34 @@
+.button {
+    display: inline-block;
+
+    padding: 1.6rem 6.5rem;
+    width: fit-content;
+    border: 1px rgba(0,0,0,0) solid;
+
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+
+    background: #FFA740;
+
+    transition: .5s linear background-color, .3s ease letter-spacing, .2s ease border-color;
+}
+
+.button:hover {
+    background-color: rgb(0, 128, 0);
+
+    letter-spacing: .1rem;
+}
+
+.button:active {
+    border-color: white;
+}
+
+@media (max-width: 1024px) {
+    .button {
+        padding: .8rem 3rem;
+
+        font-size: 1.6rem;
+    }
+}

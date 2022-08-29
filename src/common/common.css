@@ -29,28 +29,6 @@ body {
     text-transform: uppercase;
 }
 
-.button {
-    display: inline-block;
-
-    padding: 1.6rem 6.5rem;
-    width: fit-content;
-
-    color: white;
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: 700;
-
-    background: #FFA740;
-}
-
-@media (max-width: 1024px) {
-    .button {
-        padding: .8rem 3rem;
-
-        font-size: 1.6rem;
-    }
-}
-
 .list {
     display: flex;
     justify-content: space-between;
@@ -75,12 +53,6 @@ body {
     }
 }
 
-.welcome-block__link_heeded {
-    display: inherit;
-}
-
-@media (max-width: 1024px) {
-    .welcome-block__link_heeded {
-        display: none;
-    }
+a {
+    text-decoration: none;
 }

@@ -1,0 +1,9 @@
+.drop-down-menu {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .drop-down-menu {
+        display: block;
+    }
+}
