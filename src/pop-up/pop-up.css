@@ -12,6 +12,12 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+@media (max-width: 767px) {
+    .popup {
+        width: 100%;
+    }
+}
+
 .popup__header {
     display: flex;
     justify-content: center;
@@ -46,6 +52,8 @@
 @media (max-width: 767px) {
     .popup__title {
         font-size: 2rem;
+
+        margin-top: 1rem;
     }
 }
 
@@ -60,7 +68,11 @@
 
 @media (max-width: 767px) {
     .popup__text {
+        margin-bottom: 1rem;
+
         line-height: 2rem;
+
+        width: 80%;
     }
 }
 
@@ -99,6 +111,7 @@
         flex-direction: column;
 
         width: 80%;
+        margin-top: 1rem;
     }
 }
 
@@ -106,4 +119,11 @@
     position: absolute;
     top: 2.5rem;
     right: 2.5rem;
+}
+
+@media (max-width: 767px) {
+    .popup__cancel {
+        top: -2.5rem;
+        right: .5rem;
+    }
 }
