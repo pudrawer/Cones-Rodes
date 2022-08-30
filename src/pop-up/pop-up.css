@@ -94,6 +94,8 @@
 @media (max-width: 767px) {
     .popup__link {
         font-size: 1.4rem;
+
+        margin-bottom: 1rem;
     }
 }
 
