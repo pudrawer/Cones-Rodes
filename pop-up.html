@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Cones & Rodes</title>
 
-    <meta name="description" content="https://www.figma.com/file/7kS6tZWq3y2iWPirXuPshm/Lachestry%3A-Web-pages-design?node-id=206%3A2">
+    <meta name="description"
+          content="https://www.figma.com/file/7kS6tZWq3y2iWPirXuPshm/Lachestry%3A-Web-pages-design?node-id=206%3A2">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,424 +31,474 @@
     <link href="src/dropdown/dropdown.css" rel="stylesheet">
     <link href="src/button/button.css" rel="stylesheet">
 
+    <link href="src/locker/locker.css" rel="stylesheet">
     <link href="src/pop-up/pop-up.css" rel="stylesheet">
+    <link href="src/input/input.css" rel="stylesheet">
 </head>
 <body>
 
-
-
 <div class="locker">
-    <aside class="pop-up">
-        <div class="pop-up__header">
-            <h3 class="pop-up__title">
+    <aside class="popup">
+        <div class="popup__header">
+            <a class="popup__cancel">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_226_160)">
+                        <path d="M17.5574 2.55738L15.4424 0.442383L8.99988 6.88488L2.55738 0.442383L0.442383 2.55738L6.88488 8.99988L0.442383 15.4424L2.55738 17.5574L8.99988 11.1149L15.4424 17.5574L17.5574 15.4424L11.1149 8.99988L17.5574 2.55738Z" fill="white"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_226_160">
+                            <rect width="18" height="18" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+
+            <h3 class="popup__title">
                 65% OFF for subscribe
             </h3>
 
-            <a class="pop-up__text">
+            <a class="popup__text">
                 Lorem Ipsum is simply dummy text of the printings the types industry. Lorem Ipsum has been the industry’s that standards dummy text ever since the 1500s, when an unknown
             </a>
         </div>
 
-        <div class="pop-up__content">
-            <form class="pop-up__form">
+        <div class="popup__content">
+            <form class="popup__form">
                 <input
-                    class="pop-up__input"
+                    class="input"
                     type="text"
                     placeholder="Email"
                 >
 
                 <input
-                    class="pop-up__submit"
+                    class="input input_submit"
                     type="submit"
                     value="Submit"
                 >
             </form>
 
-            <a class="pop-up__link">
+            <a class="popup__link">
                 Remind me later
             </a>
         </div>
     </aside>
 </div>
 
-<div class="welcome block">
-    <header class="header">
-        <a class="header__logo logo">
+
+<div class="container">
+    <div class="welcome block">
+        <header class="header">
+            <a class="header__logo logo">
+                CONES & RODES
+            </a>
+
+            <a class="drop-down-menu">
+                <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0H16V2H0V0ZM0 5H16V7H0V5ZM0 10H16V12H0V10Z" fill="white"/>
+                </svg>
+            </a>
+
+            <nav class="nav nav_row header__nav">
+                <a
+                    class="nav__link header__link"
+                    href=""
+                >
+                    About us
+                </a>
+                <a
+                    class="nav__link header__link"
+                    href=""
+                >
+                    Story behind the frame
+                </a>
+                <a
+                    class="nav__link header__link"
+                    href=""
+                >
+                    Brand values
+                </a>
+                <a
+                    class="nav__link header__link header__link_heeded"
+                    href=""
+                >
+                    More
+                </a>
+                <a
+                    class="nav__link header__link header__link_heeding"
+                    href=""
+                >
+                    Products
+                </a>
+                <a
+                    class="nav__link header__link header__link_heeding"
+                    href=""
+                >
+                    News
+                </a>
+                <a
+                    class="nav__link header__link header__link_heeding"
+                    href=""
+                >
+                    Store locator
+                </a>
+            </nav>
+
+            <nav class="nav wish wish_margined">
+                <a
+                    class="nav__link wish__link wish__link_margined"
+                    href=""
+                >
+                    <svg class="wish__svg" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M11.7473 11.7474C11.8518 11.6428 11.9758 11.5599 12.1124 11.5032C12.249 11.4466 12.3954 11.4175 12.5432 11.4175C12.6911 11.4175 12.8375 11.4466 12.974 11.5032C13.1106 11.5599 13.2347 11.6428 13.3392 11.7474L17.6704 16.0787C17.8815 16.2896 18.0002 16.5758 18.0003 16.8742C18.0004 17.1726 17.8819 17.4589 17.671 17.67C17.46 17.8811 17.1739 17.9997 16.8754 17.9998C16.577 17.9999 16.2908 17.8815 16.0797 17.6706L11.7484 13.3393C11.6438 13.2348 11.5608 13.1107 11.5042 12.9742C11.4476 12.8376 11.4185 12.6912 11.4185 12.5434C11.4185 12.3955 11.4476 12.2491 11.5042 12.1126C11.5608 11.976 11.6438 11.8519 11.7484 11.7474H11.7473Z"
+                              fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M7.3125 13.5C8.12505 13.5 8.92965 13.34 9.68035 13.029C10.4311 12.7181 11.1132 12.2623 11.6877 11.6877C12.2623 11.1132 12.7181 10.4311 13.029 9.68035C13.34 8.92965 13.5 8.12505 13.5 7.3125C13.5 6.49995 13.34 5.69535 13.029 4.94465C12.7181 4.19394 12.2623 3.51184 11.6877 2.93728C11.1132 2.36271 10.4311 1.90695 9.68035 1.596C8.92965 1.28504 8.12505 1.125 7.3125 1.125C5.67147 1.125 4.09766 1.7769 2.93728 2.93728C1.7769 4.09766 1.125 5.67147 1.125 7.3125C1.125 8.95353 1.7769 10.5273 2.93728 11.6877C4.09766 12.8481 5.67147 13.5 7.3125 13.5ZM14.625 7.3125C14.625 9.2519 13.8546 11.1119 12.4832 12.4832C11.1119 13.8546 9.2519 14.625 7.3125 14.625C5.3731 14.625 3.51314 13.8546 2.14178 12.4832C0.770422 11.1119 0 9.2519 0 7.3125C0 5.3731 0.770422 3.51314 2.14178 2.14178C3.51314 0.770422 5.3731 0 7.3125 0C9.2519 0 11.1119 0.770422 12.4832 2.14178C13.8546 3.51314 14.625 5.3731 14.625 7.3125Z"
+                              fill="white"/>
+                    </svg>
+                </a>
+                <a
+                    class="nav__link wish__link wish__link_margined"
+                    href=""
+                >
+                    <svg class="wish__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.2222 5.12229C7.2222 4.38557 7.51485 3.67904 8.03579 3.1581C8.55672 2.63717 9.26326 2.34451 9.99997 2.34451C10.7367 2.34451 11.4432 2.63717 11.9642 3.1581C12.4851 3.67904 12.7778 4.38557 12.7778 5.12229V6.66673H13.8889V5.12229C13.8889 4.61159 13.7883 4.1059 13.5928 3.63407C13.3974 3.16225 13.1109 2.73354 12.7498 2.37243C12.3887 2.01131 11.96 1.72486 11.4882 1.52942C11.0164 1.33399 10.5107 1.2334 9.99997 1.2334C9.48928 1.2334 8.98358 1.33399 8.51176 1.52942C8.03994 1.72486 7.61123 2.01131 7.25011 2.37243C6.889 2.73354 6.60254 3.16225 6.40711 3.63407C6.21167 4.1059 6.11108 4.61159 6.11108 5.12229V6.66673H7.2222V5.12229Z"
+                            fill="white"/>
+                        <path
+                            d="M13.8889 6.6665V8.38873C13.8889 8.53607 13.8304 8.67738 13.7262 8.78156C13.622 8.88575 13.4807 8.94428 13.3333 8.94428C13.186 8.94428 13.0447 8.88575 12.9405 8.78156C12.8363 8.67738 12.7778 8.53607 12.7778 8.38873V6.6665H7.22223V8.38873C7.22223 8.53607 7.1637 8.67738 7.05951 8.78156C6.95532 8.88575 6.81402 8.94428 6.66667 8.94428C6.51933 8.94428 6.37802 8.88575 6.27384 8.78156C6.16965 8.67738 6.11112 8.53607 6.11112 8.38873V6.6665H2.22223V17.7776C2.22223 18.0723 2.33929 18.3549 2.54767 18.5633C2.75604 18.7717 3.03866 18.8887 3.33334 18.8887H16.6667C16.9614 18.8887 17.244 18.7717 17.4523 18.5633C17.6607 18.3549 17.7778 18.0723 17.7778 17.7776V6.6665H13.8889Z"
+                            fill="white"/>
+                    </svg>
+                </a>
+                <a
+                    class="nav__link wish__link wish__link_margined"
+                    href=""
+                >
+                    <svg class="wish__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.25 5.4165C6.25 7.484 7.9325 9.1665 10 9.1665C12.0675 9.1665 13.75 7.484 13.75 5.4165C13.75 3.349 12.0675 1.6665 10 1.6665C7.9325 1.6665 6.25 3.349 6.25 5.4165ZM16.6667 17.4998H17.5V16.6665C17.5 13.4507 14.8825 10.8332 11.6667 10.8332H8.33333C5.11667 10.8332 2.5 13.4507 2.5 16.6665V17.4998H16.6667Z"
+                            fill="white"/>
+                    </svg>
+                </a>
+            </nav>
+        </header>
+
+        <section class="welcome__content">
+            <h1 class="title">
+                Season Top Collection
+            </h1>
+
+            <h4 class="welcome__subtitle subtitle">
+                New arrival
+            </h4>
+
+            <a class="welcome__button button" href="">
+                Shop Now
+            </a>
+        </section>
+    </div>
+
+    <div class="products products_margined block">
+        <div class="products__header block__header">
+            <h2 class="products__block-title block-title">
+                New Arrivals - Bags
+            </h2>
+
+            <a class="products__permalink link" href="">
+                View All Bag
+            </a>
+        </div>
+
+        <div class="products__content">
+            <ul class="products__list list">
+                <li class="product-item product-item_margined">
+                    <img
+                        src="src/img/product/product-yell-bag.jpg"
+                        alt="bag"
+                    >
+                    <h6 class="product-item__name">
+                        Yellow bag funny
+                    </h6>
+                    <a class="product-item__price">
+                        $ 210
+                    </a>
+                </li>
+
+                <li class="product-item product-item_margined">
+                    <img
+                        src="src/img/product/product-gray-bag.jpg"
+                        alt="bag"
+                    >
+                    <h6 class="product-item__name">
+                        Big gray bag
+                    </h6>
+                    <a class="product-item__price">
+                        $ 510
+                    </a>
+                </li>
+
+                <li class="product-item product-item_margined">
+                    <img
+                        src="src/img/product/product-tote-bag.jpg"
+                        alt="bag"
+                    >
+                    <h6 class="product-item__name">
+                        Big tote bag
+                    </h6>
+                    <a class="product-item__price">
+                        $ 64
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="values values_margined block">
+        <h2 class="block-title block__header">
+            Our values
+        </h2>
+
+        <div class="values__content">
+            <img
+                src="src/img/values/values-img.jpg"
+                alt=""
+                class="values__img"
+            >
+
+            <div class="values__text">
+                <a>
+                    Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                    ipsa quae ab illo inventore veritatis et quasi. Exercitation photo booth stumptown tote bag todo
+                    Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation photo booth et 8-bit kale
+                    chips proident chillwave deep vow laborum.
+                </a>
+                <a class="values__text-heeding">
+                    Aliquip veniam delectus, marfa eiusmod pinterest. Omnis iste natus error sit voluptatem accusantium
+                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
+                    Exercitation photo booth stumptown tote bag todo Banksy, elit small batch freegan sed. Craft beer
+                    elit seitan exercitation photo booth et 8-bit kale chips proident chillwave deep vow laborum.
+                </a>
+
+                <a
+                    href=""
+                    class="values__button button"
+                >
+                    Read More
+                    <svg width="8.8" height="16.1" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                         class="values-block__svg">
+                        <path
+                            d="M0.600006 14.2498L6.10001 8.4998L0.600006 2.74981L1.70001 0.449804L9.40001 8.4998L1.70001 16.5498L0.600006 14.2498Z"
+                            fill="white"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="news block">
+        <h2 class="news__title">
+            News
+        </h2>
+
+        <a
+            class="news__link link"
+            href="www.instagram.com/elis_official_group/"
+        >
+            www.instagram.com/elis_official_group/
+        </a>
+    </div>
+
+    <div class="photos-block block">
+        <h2 class="photos-block__title block-title">
+            Instagram photos
+        </h2>
+
+        <section class="photos-block__slide">
+            <ul class="photos-block__list list">
+                <li class="photos-block__item">
+                    <img
+                        src="src/img/inst/inst-white-bag.jpg"
+                        alt="photo"
+                    >
+                </li>
+                <li class="photos-block__item">
+                    <img
+                        src="src/img/inst/inst-gray-bag.jpg"
+                        alt="photo"
+                    >
+                </li>
+                <li class="photos-block__item">
+                    <img
+                        src="src/img/inst/inst-red-bag.jpg"
+                        alt="photo"
+                    >
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <footer class="footer block">
+        <a class="footer__logo logo">
             CONES & RODES
         </a>
 
-        <a class="drop-down-menu">
-            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0H16V2H0V0ZM0 5H16V7H0V5ZM0 10H16V12H0V10Z" fill="white"/>
-            </svg>
-        </a>
+        <section class="info info_margined">
+            <div class="info__nav-contact">
+                <div class="footer__nav-permalink">
+                    <nav class="info__nav nav">
+                        <h6 class="nav__subtitle subtitle">
+                            quick links
+                        </h6>
 
-        <nav class="nav nav_row header__nav">
-            <a
-                class="nav__link header__link"
-                href=""
-            >
-                About us
-            </a>
-            <a
-                class="nav__link header__link"
-                href=""
-            >
-                Story behind the frame
-            </a>
-            <a
-                class="nav__link header__link"
-                href=""
-            >
-                Brand values
-            </a>
-            <a
-                class="nav__link header__link header__link_heeded"
-                href=""
-            >
-                More
-            </a>
-            <a
-                class="nav__link header__link header__link_heeding"
-                href=""
-            >
-                Products
-            </a>
-            <a
-                class="nav__link header__link header__link_heeding"
-                href=""
-            >
-                News
-            </a>
-            <a
-                class="nav__link header__link header__link_heeding"
-                href=""
-            >
-                Store locator
-            </a>
-        </nav>
+                        <ul class="footer__list nav__list list">
+                            <li class="footer__item nav__item">
+                                <a
+                                    href=""
+                                    class="nav__link nav__link_alternative"
+                                >
+                                    Salons location
+                                </a>
+                            </li>
+                            <li class="footer__item nav__item">
+                                <a
+                                    href=""
+                                    class="nav__link nav__link_alternative"
+                                >
+                                    Register
+                                </a>
+                            </li>
+                            <li class="footer__item nav__item">
+                                <a
+                                    href=""
+                                    class="nav__link nav__link_alternative"
+                                >
+                                    Orders tracking
+                                </a>
+                            </li>
+                            <li class="footer__item nav__item">
+                                <a
+                                    href=""
+                                    class="nav__link nav__link_alternative"
+                                >
+                                    FAQs
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
 
-        <nav class="nav wish wish_margined">
-            <a
-                class="nav__link wish__link wish__link_margined"
-                href=""
-            >
-                <svg class="wish__svg" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7473 11.7474C11.8518 11.6428 11.9758 11.5599 12.1124 11.5032C12.249 11.4466 12.3954 11.4175 12.5432 11.4175C12.6911 11.4175 12.8375 11.4466 12.974 11.5032C13.1106 11.5599 13.2347 11.6428 13.3392 11.7474L17.6704 16.0787C17.8815 16.2896 18.0002 16.5758 18.0003 16.8742C18.0004 17.1726 17.8819 17.4589 17.671 17.67C17.46 17.8811 17.1739 17.9997 16.8754 17.9998C16.577 17.9999 16.2908 17.8815 16.0797 17.6706L11.7484 13.3393C11.6438 13.2348 11.5608 13.1107 11.5042 12.9742C11.4476 12.8376 11.4185 12.6912 11.4185 12.5434C11.4185 12.3955 11.4476 12.2491 11.5042 12.1126C11.5608 11.976 11.6438 11.8519 11.7484 11.7474H11.7473Z" fill="white"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.3125 13.5C8.12505 13.5 8.92965 13.34 9.68035 13.029C10.4311 12.7181 11.1132 12.2623 11.6877 11.6877C12.2623 11.1132 12.7181 10.4311 13.029 9.68035C13.34 8.92965 13.5 8.12505 13.5 7.3125C13.5 6.49995 13.34 5.69535 13.029 4.94465C12.7181 4.19394 12.2623 3.51184 11.6877 2.93728C11.1132 2.36271 10.4311 1.90695 9.68035 1.596C8.92965 1.28504 8.12505 1.125 7.3125 1.125C5.67147 1.125 4.09766 1.7769 2.93728 2.93728C1.7769 4.09766 1.125 5.67147 1.125 7.3125C1.125 8.95353 1.7769 10.5273 2.93728 11.6877C4.09766 12.8481 5.67147 13.5 7.3125 13.5ZM14.625 7.3125C14.625 9.2519 13.8546 11.1119 12.4832 12.4832C11.1119 13.8546 9.2519 14.625 7.3125 14.625C5.3731 14.625 3.51314 13.8546 2.14178 12.4832C0.770422 11.1119 0 9.2519 0 7.3125C0 5.3731 0.770422 3.51314 2.14178 2.14178C3.51314 0.770422 5.3731 0 7.3125 0C9.2519 0 11.1119 0.770422 12.4832 2.14178C13.8546 3.51314 14.625 5.3731 14.625 7.3125Z" fill="white"/>
-                </svg>
-            </a>
-            <a
-                class="nav__link wish__link wish__link_margined"
-                href=""
-            >
-                <svg class="wish__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.2222 5.12229C7.2222 4.38557 7.51485 3.67904 8.03579 3.1581C8.55672 2.63717 9.26326 2.34451 9.99997 2.34451C10.7367 2.34451 11.4432 2.63717 11.9642 3.1581C12.4851 3.67904 12.7778 4.38557 12.7778 5.12229V6.66673H13.8889V5.12229C13.8889 4.61159 13.7883 4.1059 13.5928 3.63407C13.3974 3.16225 13.1109 2.73354 12.7498 2.37243C12.3887 2.01131 11.96 1.72486 11.4882 1.52942C11.0164 1.33399 10.5107 1.2334 9.99997 1.2334C9.48928 1.2334 8.98358 1.33399 8.51176 1.52942C8.03994 1.72486 7.61123 2.01131 7.25011 2.37243C6.889 2.73354 6.60254 3.16225 6.40711 3.63407C6.21167 4.1059 6.11108 4.61159 6.11108 5.12229V6.66673H7.2222V5.12229Z" fill="white"/>
-                    <path d="M13.8889 6.6665V8.38873C13.8889 8.53607 13.8304 8.67738 13.7262 8.78156C13.622 8.88575 13.4807 8.94428 13.3333 8.94428C13.186 8.94428 13.0447 8.88575 12.9405 8.78156C12.8363 8.67738 12.7778 8.53607 12.7778 8.38873V6.6665H7.22223V8.38873C7.22223 8.53607 7.1637 8.67738 7.05951 8.78156C6.95532 8.88575 6.81402 8.94428 6.66667 8.94428C6.51933 8.94428 6.37802 8.88575 6.27384 8.78156C6.16965 8.67738 6.11112 8.53607 6.11112 8.38873V6.6665H2.22223V17.7776C2.22223 18.0723 2.33929 18.3549 2.54767 18.5633C2.75604 18.7717 3.03866 18.8887 3.33334 18.8887H16.6667C16.9614 18.8887 17.244 18.7717 17.4523 18.5633C17.6607 18.3549 17.7778 18.0723 17.7778 17.7776V6.6665H13.8889Z" fill="white"/>
-                </svg>
-            </a>
-            <a
-                class="nav__link wish__link wish__link_margined"
-                href=""
-            >
-                <svg class="wish__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.25 5.4165C6.25 7.484 7.9325 9.1665 10 9.1665C12.0675 9.1665 13.75 7.484 13.75 5.4165C13.75 3.349 12.0675 1.6665 10 1.6665C7.9325 1.6665 6.25 3.349 6.25 5.4165ZM16.6667 17.4998H17.5V16.6665C17.5 13.4507 14.8825 10.8332 11.6667 10.8332H8.33333C5.11667 10.8332 2.5 13.4507 2.5 16.6665V17.4998H16.6667Z" fill="white"/>
-                </svg>
-            </a>
-        </nav>
-    </header>
+                    <nav class="footer__nav nav">
+                        <h6 class="nav__subtitle subtitle">
+                            Help & support
+                        </h6>
 
-    <section class="welcome__content">
-        <h1 class="title">
-            Season Top Collection
-        </h1>
+                        <ul class="footer__list nav__list list">
+                            <li class="footer__item nav__item">
+                                <a
+                                    href=""
+                                    class="nav__link nav__link_alternative"
+                                >
+                                    Contact us
+                                </a>
+                            </li>
+                            <li class="footer__item nav__item">
+                                <a
+                                    href=""
+                                    class="nav__link nav__link_alternative"
+                                >
+                                    Term & Conditions
+                                </a>
+                            </li>
+                            <li class="footer__item nav__item">
+                                <a
+                                    href=""
+                                    class="nav__link nav__link_alternative"
+                                >
+                                    Shipping & Delivery
+                                </a>
+                            </li>
+                            <li class="footer__item nav__item">
+                                <a
+                                    href=""
+                                    class="nav__link nav__link_alternative"
+                                >
+                                    Privacy Policy
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
 
-        <h4 class="welcome__subtitle subtitle">
-            New arrival
-        </h4>
+                <nav class="nav nav_ordered">
+                    <a
+                        class="nav__link nav__link_margined nav__link_contact"
+                        href="mailto:contact@conesrodes.com"
+                    >
+                        <svg class="nav__link-svg" width="20" height="16" viewBox="0 0 20 16" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 0H0V16H20V0ZM18 4L10 9L2 4V2L10 7L18 2V4Z" fill="white"/>
+                        </svg>
+                        contact@conesrodes.com
+                    </a>
 
-        <a class="welcome__button button" href="">
-            Shop Now
-        </a>
-    </section>
-</div>
+                    <a
+                        class="nav__link nav__link_contact"
+                        href="tel:+14954543243"
+                    >
+                        <svg class="nav__link-svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.4188 0.769088L12.1688 0.0190879C11.8156 -0.0621621 11.4531 0.122213 11.3094 0.453463L9.80938 3.95346C9.67813 4.25971 9.76563 4.61909 10.025 4.82846L11.9188 6.37846C10.7938 8.77534 8.82813 10.7691 6.38126 11.916L4.83126 10.0222C4.61876 9.76284 4.26251 9.67534 3.95625 9.80659L0.456255 11.3066C0.12188 11.4535 -0.0624949 11.816 0.0187551 12.1691L0.768755 15.4191C0.84688 15.7566 1.14688 16.0003 1.50001 16.0003C9.50313 16.0003 16 9.51596 16 1.50034C16 1.15034 15.7594 0.847213 15.4188 0.769088Z"
+                                fill="white"/>
+                        </svg>
+                        +1 495 454 32 43
+                    </a>
 
-<div class="products products_margined block">
-    <div class="products__header block__header">
-        <h2 class="products__block-title block-title">
-            New Arrivals - Bags
-        </h2>
-
-        <a class="products__permalink link" href="">
-            View All Bag
-        </a>
-    </div>
-
-    <div class="products__content">
-        <ul class="products__list list">
-            <li class="product-item product-item_margined">
-                <img
-                    src="src/img/product/product-yell-bag.jpg"
-                    alt="bag"
-                >
-                <h6 class="product-item__name">
-                    Yellow bag funny
-                </h6>
-                <a class="product-item__price">
-                    $ 210
-                </a>
-            </li>
-
-            <li class="product-item product-item_margined">
-                <img
-                    src="src/img/product/product-gray-bag.jpg"
-                    alt="bag"
-                >
-                <h6 class="product-item__name">
-                    Big gray bag
-                </h6>
-                <a class="product-item__price">
-                    $ 510
-                </a>
-            </li>
-
-            <li class="product-item product-item_margined">
-                <img
-                    src="src/img/product/product-tote-bag.jpg"
-                    alt="bag"
-                >
-                <h6 class="product-item__name">
-                    Big tote bag
-                </h6>
-                <a class="product-item__price">
-                    $ 64
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-
-<div class="values values_margined block">
-    <h2 class="block-title block__header">
-        Our values
-    </h2>
-
-    <div class="values__content">
-        <img
-            src="src/img/values/values-img.jpg"
-            alt=""
-            class="values__img"
-        >
-
-        <div class="values__text">
-            <a>
-                Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. Exercitation photo booth stumptown tote bag todo Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation photo booth et 8-bit kale chips proident chillwave deep vow laborum.
-            </a>
-            <a class="values__text-heeding">
-                Aliquip veniam delectus, marfa eiusmod pinterest. Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. Exercitation photo booth stumptown tote bag todo Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation photo booth et 8-bit kale chips proident chillwave deep vow laborum.
-            </a>
-
-            <a
-                href=""
-                class="values__button button"
-            >
-                Read More
-                <svg width="8.8" height="16.1" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg" class="values-block__svg">
-                    <path d="M0.600006 14.2498L6.10001 8.4998L0.600006 2.74981L1.70001 0.449804L9.40001 8.4998L1.70001 16.5498L0.600006 14.2498Z" fill="white"/>
-                </svg>
-            </a>
-        </div>
-    </div>
-</div>
-
-<div class="news block">
-    <h2 class="news__title">
-        News
-    </h2>
-
-    <a
-        class="news__link link"
-        href="www.instagram.com/elis_official_group/"
-    >
-        www.instagram.com/elis_official_group/
-    </a>
-</div>
-
-<div class="photos-block block">
-    <h2 class="photos-block__title block-title">
-        Instagram photos
-    </h2>
-
-    <section class="photos-block__slide">
-        <ul class="photos-block__list list">
-            <li class="photos-block__item">
-                <img
-                    src="src/img/inst/inst-white-bag.jpg"
-                    alt="photo"
-                >
-            </li>
-            <li class="photos-block__item">
-                <img
-                    src="src/img/inst/inst-gray-bag.jpg"
-                    alt="photo"
-                >
-            </li>
-            <li class="photos-block__item">
-                <img
-                    src="src/img/inst/inst-red-bag.jpg"
-                    alt="photo"
-                >
-            </li>
-        </ul>
-    </section>
-</div>
-
-<footer class="footer block">
-    <a class="footer__logo logo">
-        CONES & RODES
-    </a>
-
-    <section class="info info_margined">
-        <div class="info__nav-contact">
-            <div class="footer__nav-permalink">
-                <nav class="info__nav nav">
-                    <h6 class="nav__subtitle subtitle">
-                        quick links
-                    </h6>
-
-                    <ul class="footer__list nav__list list">
-                        <li class="footer__item nav__item">
-                            <a
-                                href=""
-                                class="nav__link nav__link_alternative"
-                            >
-                                Salons location
-                            </a>
-                        </li>
-                        <li class="footer__item nav__item">
-                            <a
-                                href=""
-                                class="nav__link nav__link_alternative"
-                            >
-                                Register
-                            </a>
-                        </li>
-                        <li class="footer__item nav__item">
-                            <a
-                                href=""
-                                class="nav__link nav__link_alternative"
-                            >
-                                Orders tracking
-                            </a>
-                        </li>
-                        <li class="footer__item nav__item">
-                            <a
-                                href=""
-                                class="nav__link nav__link_alternative"
-                            >
-                                FAQs
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <nav class="footer__nav nav">
-                    <h6 class="nav__subtitle subtitle">
-                        Help & support
-                    </h6>
-
-                    <ul class="footer__list nav__list list">
-                        <li class="footer__item nav__item">
-                            <a
-                                href=""
-                                class="nav__link nav__link_alternative"
-                            >
-                                Contact us
-                            </a>
-                        </li>
-                        <li class="footer__item nav__item">
-                            <a
-                                href=""
-                                class="nav__link nav__link_alternative"
-                            >
-                                Term & Conditions
-                            </a>
-                        </li>
-                        <li class="footer__item nav__item">
-                            <a
-                                href=""
-                                class="nav__link nav__link_alternative"
-                            >
-                                Shipping & Delivery
-                            </a>
-                        </li>
-                        <li class="footer__item nav__item">
-                            <a
-                                href=""
-                                class="nav__link nav__link_alternative"
-                            >
-                                Privacy Policy
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="social social_margined">
+                        <a
+                            class="social__link"
+                            href=""
+                        >
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14 0C6.26875 0 0 6.26875 0 14C0 21.7313 6.26875 28 14 28C21.7313 28 28 21.7313 28 14C28 6.26875 21.7313 0 14 0ZM20.7281 10.5531C20.7375 10.7 20.7375 10.8531 20.7375 11.0031C20.7375 15.5906 17.2437 20.875 10.8594 20.875C8.89062 20.875 7.06562 20.3031 5.52812 19.3188C5.80937 19.35 6.07813 19.3625 6.36563 19.3625C7.99063 19.3625 9.48438 18.8125 10.675 17.8813C9.15 17.85 7.86875 16.85 7.43125 15.475C7.96562 15.5531 8.44687 15.5531 8.99687 15.4125C8.21164 15.253 7.50586 14.8265 6.99943 14.2056C6.49299 13.5846 6.21715 12.8075 6.21875 12.0063V11.9625C6.67812 12.2219 7.21875 12.3812 7.78438 12.4031C7.30888 12.0862 6.91893 11.6569 6.6491 11.1532C6.37926 10.6495 6.23789 10.087 6.2375 9.51562C6.2375 8.86875 6.40625 8.27812 6.70938 7.76562C7.58095 8.83855 8.66853 9.71607 9.90145 10.3411C11.1344 10.9662 12.485 11.3249 13.8656 11.3938C13.375 9.03438 15.1375 7.125 17.2563 7.125C18.2563 7.125 19.1562 7.54375 19.7906 8.21875C20.575 8.07187 21.325 7.77812 21.9937 7.38437C21.7344 8.1875 21.1906 8.86562 20.4688 9.29375C21.1688 9.21875 21.8438 9.025 22.4688 8.75313C21.9969 9.44688 21.4062 10.0625 20.7281 10.5531Z"
+                                    fill="white"/>
+                            </svg>
+                        </a>
+                        <a
+                            class="social__link"
+                            href=""
+                        >
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14 0C6.26792 0 0 6.26792 0 14C0 21.7321 6.26792 28 14 28C21.7321 28 28 21.7321 28 14C28 6.26792 21.7321 0 14 0ZM17.3162 9.67458H15.2119C14.9625 9.67458 14.6854 10.0027 14.6854 10.4387V11.9583H17.3177L16.9196 14.1254H14.6854V20.631H12.2019V14.1254H9.94875V11.9583H12.2019V10.6837C12.2019 8.855 13.4706 7.36896 15.2119 7.36896H17.3162V9.67458Z"
+                                    fill="white"/>
+                            </svg>
+                        </a>
+                        <a
+                            class="social__link"
+                            href=""
+                        >
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.2 13.9996C18.2 15.1135 17.7575 16.1818 16.9698 16.9694C16.1822 17.7571 15.1139 18.1996 14 18.1996C12.8861 18.1996 11.8178 17.7571 11.0301 16.9694C10.2425 16.1818 9.8 15.1135 9.8 13.9996C9.8 13.7602 9.8252 13.5264 9.8686 13.2996H8.4V18.8954C8.4 19.2846 8.715 19.5996 9.1042 19.5996H18.8972C19.0837 19.5992 19.2625 19.5248 19.3942 19.3928C19.526 19.2608 19.6 19.0819 19.6 18.8954V13.2996H18.1314C18.1748 13.5264 18.2 13.7602 18.2 13.9996V13.9996ZM14 16.7996C14.3678 16.7995 14.732 16.7269 15.0717 16.5861C15.4115 16.4453 15.7202 16.2389 15.9802 15.9788C16.2402 15.7186 16.4464 15.4098 16.5871 15.07C16.7277 14.7302 16.8001 14.366 16.8 13.9982C16.7999 13.6304 16.7274 13.2662 16.5865 12.9264C16.4457 12.5867 16.2393 12.278 15.9792 12.018C15.7191 11.758 15.4103 11.5518 15.0704 11.4111C14.7306 11.2704 14.3664 11.1981 13.9986 11.1982C13.2558 11.1984 12.5435 11.4936 12.0184 12.019C11.4933 12.5443 11.1984 13.2568 11.1986 13.9996C11.1988 14.7424 11.494 15.4547 12.0194 15.9798C12.5448 16.5049 13.2572 16.7998 14 16.7996V16.7996ZM17.36 11.0596H19.0386C19.1501 11.0596 19.2571 11.0154 19.3361 10.9366C19.4151 10.8579 19.4596 10.7511 19.46 10.6396V8.96097C19.46 8.84921 19.4156 8.74202 19.3366 8.663C19.2575 8.58397 19.1504 8.53957 19.0386 8.53957H17.36C17.2482 8.53957 17.1411 8.58397 17.062 8.663C16.983 8.74202 16.9386 8.84921 16.9386 8.96097V10.6396C16.94 10.8706 17.129 11.0596 17.36 11.0596V11.0596ZM14 0.55957C10.4355 0.55957 7.01697 1.97557 4.49648 4.49605C1.97599 7.01654 0.559998 10.4351 0.559998 13.9996C0.559998 17.5641 1.97599 20.9826 4.49648 23.5031C7.01697 26.0236 10.4355 27.4396 14 27.4396C15.765 27.4396 17.5126 27.0919 19.1433 26.4165C20.7739 25.7411 22.2555 24.7511 23.5035 23.5031C24.7515 22.2551 25.7415 20.7735 26.4169 19.1428C27.0924 17.5122 27.44 15.7645 27.44 13.9996C27.44 12.2346 27.0924 10.4869 26.4169 8.8563C25.7415 7.22569 24.7515 5.74407 23.5035 4.49605C22.2555 3.24804 20.7739 2.25805 19.1433 1.58263C17.5126 0.907206 15.765 0.55957 14 0.55957V0.55957ZM21 19.4442C21 20.2996 20.3 20.9996 19.4446 20.9996H8.5554C7.7 20.9996 7 20.2996 7 19.4442V8.55497C7 7.69957 7.7 6.99957 8.5554 6.99957H19.4446C20.3 6.99957 21 7.69957 21 8.55497V19.4442V19.4442Z"
+                                    fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
                 </nav>
             </div>
 
-            <nav class="nav nav_ordered">
-                <a
-                    class="nav__link nav__link_margined nav__link_contact"
-                    href="mailto:contact@conesrodes.com"
-                >
-                    <svg class="nav__link-svg" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20 0H0V16H20V0ZM18 4L10 9L2 4V2L10 7L18 2V4Z" fill="white"/>
-                    </svg>
-                    contact@conesrodes.com
-                </a>
-
-                <a
-                    class="nav__link nav__link_contact"
-                    href="tel:+14954543243"
-                >
-                    <svg class="nav__link-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15.4188 0.769088L12.1688 0.0190879C11.8156 -0.0621621 11.4531 0.122213 11.3094 0.453463L9.80938 3.95346C9.67813 4.25971 9.76563 4.61909 10.025 4.82846L11.9188 6.37846C10.7938 8.77534 8.82813 10.7691 6.38126 11.916L4.83126 10.0222C4.61876 9.76284 4.26251 9.67534 3.95625 9.80659L0.456255 11.3066C0.12188 11.4535 -0.0624949 11.816 0.0187551 12.1691L0.768755 15.4191C0.84688 15.7566 1.14688 16.0003 1.50001 16.0003C9.50313 16.0003 16 9.51596 16 1.50034C16 1.15034 15.7594 0.847213 15.4188 0.769088Z" fill="white"/>
-                    </svg>
-                    +1 495 454 32 43
-                </a>
-
-                <div class="social social_margined">
-                    <a
-                        class="social__link"
-                        href=""
-                    >
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14 0C6.26875 0 0 6.26875 0 14C0 21.7313 6.26875 28 14 28C21.7313 28 28 21.7313 28 14C28 6.26875 21.7313 0 14 0ZM20.7281 10.5531C20.7375 10.7 20.7375 10.8531 20.7375 11.0031C20.7375 15.5906 17.2437 20.875 10.8594 20.875C8.89062 20.875 7.06562 20.3031 5.52812 19.3188C5.80937 19.35 6.07813 19.3625 6.36563 19.3625C7.99063 19.3625 9.48438 18.8125 10.675 17.8813C9.15 17.85 7.86875 16.85 7.43125 15.475C7.96562 15.5531 8.44687 15.5531 8.99687 15.4125C8.21164 15.253 7.50586 14.8265 6.99943 14.2056C6.49299 13.5846 6.21715 12.8075 6.21875 12.0063V11.9625C6.67812 12.2219 7.21875 12.3812 7.78438 12.4031C7.30888 12.0862 6.91893 11.6569 6.6491 11.1532C6.37926 10.6495 6.23789 10.087 6.2375 9.51562C6.2375 8.86875 6.40625 8.27812 6.70938 7.76562C7.58095 8.83855 8.66853 9.71607 9.90145 10.3411C11.1344 10.9662 12.485 11.3249 13.8656 11.3938C13.375 9.03438 15.1375 7.125 17.2563 7.125C18.2563 7.125 19.1562 7.54375 19.7906 8.21875C20.575 8.07187 21.325 7.77812 21.9937 7.38437C21.7344 8.1875 21.1906 8.86562 20.4688 9.29375C21.1688 9.21875 21.8438 9.025 22.4688 8.75313C21.9969 9.44688 21.4062 10.0625 20.7281 10.5531Z" fill="white"/>
-                        </svg>
-                    </a>
-                    <a
-                        class="social__link"
-                        href=""
-                    >
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14 0C6.26792 0 0 6.26792 0 14C0 21.7321 6.26792 28 14 28C21.7321 28 28 21.7321 28 14C28 6.26792 21.7321 0 14 0ZM17.3162 9.67458H15.2119C14.9625 9.67458 14.6854 10.0027 14.6854 10.4387V11.9583H17.3177L16.9196 14.1254H14.6854V20.631H12.2019V14.1254H9.94875V11.9583H12.2019V10.6837C12.2019 8.855 13.4706 7.36896 15.2119 7.36896H17.3162V9.67458Z" fill="white"/>
-                        </svg>
-                    </a>
-                    <a
-                        class="social__link"
-                        href=""
-                    >
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.2 13.9996C18.2 15.1135 17.7575 16.1818 16.9698 16.9694C16.1822 17.7571 15.1139 18.1996 14 18.1996C12.8861 18.1996 11.8178 17.7571 11.0301 16.9694C10.2425 16.1818 9.8 15.1135 9.8 13.9996C9.8 13.7602 9.8252 13.5264 9.8686 13.2996H8.4V18.8954C8.4 19.2846 8.715 19.5996 9.1042 19.5996H18.8972C19.0837 19.5992 19.2625 19.5248 19.3942 19.3928C19.526 19.2608 19.6 19.0819 19.6 18.8954V13.2996H18.1314C18.1748 13.5264 18.2 13.7602 18.2 13.9996V13.9996ZM14 16.7996C14.3678 16.7995 14.732 16.7269 15.0717 16.5861C15.4115 16.4453 15.7202 16.2389 15.9802 15.9788C16.2402 15.7186 16.4464 15.4098 16.5871 15.07C16.7277 14.7302 16.8001 14.366 16.8 13.9982C16.7999 13.6304 16.7274 13.2662 16.5865 12.9264C16.4457 12.5867 16.2393 12.278 15.9792 12.018C15.7191 11.758 15.4103 11.5518 15.0704 11.4111C14.7306 11.2704 14.3664 11.1981 13.9986 11.1982C13.2558 11.1984 12.5435 11.4936 12.0184 12.019C11.4933 12.5443 11.1984 13.2568 11.1986 13.9996C11.1988 14.7424 11.494 15.4547 12.0194 15.9798C12.5448 16.5049 13.2572 16.7998 14 16.7996V16.7996ZM17.36 11.0596H19.0386C19.1501 11.0596 19.2571 11.0154 19.3361 10.9366C19.4151 10.8579 19.4596 10.7511 19.46 10.6396V8.96097C19.46 8.84921 19.4156 8.74202 19.3366 8.663C19.2575 8.58397 19.1504 8.53957 19.0386 8.53957H17.36C17.2482 8.53957 17.1411 8.58397 17.062 8.663C16.983 8.74202 16.9386 8.84921 16.9386 8.96097V10.6396C16.94 10.8706 17.129 11.0596 17.36 11.0596V11.0596ZM14 0.55957C10.4355 0.55957 7.01697 1.97557 4.49648 4.49605C1.97599 7.01654 0.559998 10.4351 0.559998 13.9996C0.559998 17.5641 1.97599 20.9826 4.49648 23.5031C7.01697 26.0236 10.4355 27.4396 14 27.4396C15.765 27.4396 17.5126 27.0919 19.1433 26.4165C20.7739 25.7411 22.2555 24.7511 23.5035 23.5031C24.7515 22.2551 25.7415 20.7735 26.4169 19.1428C27.0924 17.5122 27.44 15.7645 27.44 13.9996C27.44 12.2346 27.0924 10.4869 26.4169 8.8563C25.7415 7.22569 24.7515 5.74407 23.5035 4.49605C22.2555 3.24804 20.7739 2.25805 19.1433 1.58263C17.5126 0.907206 15.765 0.55957 14 0.55957V0.55957ZM21 19.4442C21 20.2996 20.3 20.9996 19.4446 20.9996H8.5554C7.7 20.9996 7 20.2996 7 19.4442V8.55497C7 7.69957 7.7 6.99957 8.5554 6.99957H19.4446C20.3 6.99957 21 7.69957 21 8.55497V19.4442V19.4442Z" fill="white"/>
-                        </svg>
-                    </a>
-                </div>
-            </nav>
-        </div>
-
-        <p class="footer__copyright">
-            Copyright 2020 CONES & RODES all rights reserved. Powered by LSStudio
-        </p>
-    </section>
-</footer>
-
+            <p class="footer__copyright">
+                Copyright 2020 CONES & RODES all rights reserved. Powered by LSStudio
+            </p>
+        </section>
+    </footer>
+</div>
 </body>
 </html>

@@ -17,6 +17,7 @@
     flex-direction: row;
 
     margin-top: 4rem;
+    height: min-content;
 }
 
 @media (max-width: 767px) {

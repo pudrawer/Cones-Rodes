@@ -5,7 +5,7 @@
     box-sizing: border-box;
     width: fit-content;
     max-height: 45rem;
-    max-width: 40rem;
+    max-width: 30%;
 }
 
 @media (max-width: 767px) {

@@ -57,10 +57,7 @@ a {
     text-decoration: none;
 }
 
-input {
-    outline: none;
-}
-
-input[placeholder] {
-    color: #CECFCF;
+.container {
+    margin: auto;
+    max-width: 1600px;
 }

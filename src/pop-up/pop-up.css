@@ -1,4 +1,4 @@
-.pop-up {
+.popup {
     display: flex;
     flex-direction: column;
 
@@ -6,27 +6,26 @@
 
     margin: auto;
     width: 60%;
-
+    max-width: 90rem;
     z-index: 30;
 
     font-family: 'Open Sans', sans-serif;
 }
 
-.pop-up__header {
+.popup__header {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
     width: 100%;
-    box-sizing: border-box;
 
     background: #FFA740;
 
     text-align: center;
 }
 
-.pop-up__content {
+.popup__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,19 +36,20 @@
     background: white;
 }
 
-.pop-up__title {
-    display: inline-block;
-
+.popup__title {
     margin-top: 4rem;
 
     font-weight: 700;
     font-size: 3.2rem;
-    line-height: 4.4rem;
 }
 
-.pop-up__text {
-    display: inline-block;
+@media (max-width: 767px) {
+    .popup__title {
+        font-size: 2rem;
+    }
+}
 
+.popup__text {
     margin-top: 1.4rem;
     margin-bottom: 4rem;
     width: 55%;
@@ -58,7 +58,13 @@
     font-size: 1.4rem;
 }
 
-.pop-up__link {
+@media (max-width: 767px) {
+    .popup__text {
+        line-height: 2rem;
+    }
+}
+
+.popup__link {
     margin-top: 4rem;
     margin-bottom: 3rem;
 
@@ -67,7 +73,19 @@
     font-size: 2rem;
 }
 
-.pop-up__form {
+@media (max-width: 1024px) {
+    .popup__link {
+        margin-top: 8rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .popup__link {
+        font-size: 1.4rem;
+    }
+}
+
+.popup__form {
     display: flex;
     flex-direction: row;
 
@@ -76,24 +94,16 @@
     width: 45%;
 }
 
-.pop-up__input {
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    border: 1px black solid;
+@media (max-width: 1024px) {
+    .popup__form {
+        flex-direction: column;
 
-    padding: 2rem;
+        width: 80%;
+    }
 }
 
-.pop-up__submit {
-    height: 100%;
-    padding: 1.7rem 3rem;
-    box-sizing: border-box;
-    border: none;
-
-    background: #FFA740;
-
-    color: white;
-    font-weight: 700;
-    font-size: 2.2rem;
+.popup__cancel {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
 }

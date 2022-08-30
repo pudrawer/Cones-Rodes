@@ -1,0 +1,34 @@
+.input {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    border: 1px black solid;
+
+    padding: 2rem;
+
+    color: black;
+    outline: none;
+}
+
+.input_submit {
+    height: 100%;
+    padding: 1.7rem 3rem;
+    box-sizing: border-box;
+    border: none;
+
+    background: #FFA740;
+
+    color: white;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+@media (max-width: 1024px) {
+    .input_submit {
+        margin-top: 1rem;
+    }
+}
+
+.input::placeholder {
+    color: #CECFCF;
+}
